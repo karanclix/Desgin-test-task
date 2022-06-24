@@ -1,0 +1,60 @@
+.app-main-layout{
+  width: 60vw;
+  margin: auto;
+  padding: 10px 5px 10px 5px;
+
+  .app-main-content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    .app-content-left{
+      width: 60%;
+    }
+
+    .app-content-right{
+      width: 38%;
+    }
+  }
+
+}
+
+
+@media (max-width: 1200px) {
+
+} /* for desktops */
+
+@media (max-width: 1100px) {
+  .app-main-layout{
+    width: 70vw;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .app-main-layout{
+    width: 80vw;
+  }
+
+} /* for large tablets */
+
+// @media (max-width: 768px) {
+
+// } /* for smaller tablets */
+
+@media (max-width: 768px) {
+  .app-main-layout{
+    width: 98vw;
+    margin: auto;
+
+    .app-main-content{
+      display: block;
+      .app-content-left{
+        width: 100%;
+      }
+
+      .app-content-right{
+        width: 100%;
+      }
+    }
+  }
+} /* for cellphones */

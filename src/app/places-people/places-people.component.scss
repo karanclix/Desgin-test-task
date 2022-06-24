@@ -1,0 +1,179 @@
+.app-places-people{
+  &-container{
+    &-wrap{
+      .places-people-nearby{
+        .places-people-nearby-header-main{
+          h1{
+            margin: 0;
+          }
+        }
+        .places-people-nearby-header-secondary{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .see-more{
+            color: #E63F19;
+            font-weight: 600;
+          }
+        }
+
+        &-carousel{
+          display: contents;
+          &-images{
+            padding: 0.22rem;
+            img{
+              border-radius: 20px;
+              width: 7vw;
+              height: 15vh;
+            }
+          }
+        }
+      }
+
+      .places-people-suggested{
+        &-header{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .see-more{
+            color: #E63F19;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .suggested-people-list{
+        &-wrap{
+          .suggested-people{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px 0;
+
+            &-info{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              &-icon{
+                margin-right: 0.7rem;
+                img{
+                  border-radius: 50px;
+                  height: 3.5rem;
+                  width: 3.5rem;
+                }
+              }
+              &-content{
+                p{
+                  margin: 0;
+                }
+              }
+              &-btn{
+                button{
+                  outline: none;
+                  border: none;
+                  border-radius: 10px;
+                  height: 2rem;
+                  width: 5rem;
+                  background-color: orange;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+
+} /* for desktops */
+
+@media (max-width: 991px) {
+
+} /* for laptops */
+
+@media (min-width: 768px) and (max-width: 990px) {
+  .app-places-people{
+    &-container{
+      &-wrap{
+        .places-people-nearby{
+          .places-people-nearby-header-main{
+            padding-top: 0.6rem;
+          }
+          &-carousel{
+            display: contents;
+            &-images{
+              padding: 0.22rem;
+              img{
+                width: 5.3rem;
+                height: 5.3rem;
+              }
+            }
+          }
+        }
+
+        .places-people-suggested{
+          &-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .see-more{
+              color: #E63F19;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+} /* for large tablets */
+
+// @media (max-width: 768px) {
+
+// }
+/* for smaller tablets */
+
+@media (max-width: 768px) {
+  .app-places-people{
+    &-container{
+      &-wrap{
+        .places-people-nearby{
+          .places-people-nearby-header-main{
+            padding-top: 0.6rem;
+          }
+          &-carousel{
+            overflow: scroll;
+            display: flex;
+            &-images{
+              padding: 0.22rem;
+              img{
+                width: 5.3rem;
+                height: 5.3rem;
+              }
+            }
+          }
+          &-carousel::-webkit-scrollbar {
+            display: none;
+          }
+        }
+
+        .places-people-suggested{
+          &-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .see-more{
+              color: #E63F19;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+} /* for cellphones */

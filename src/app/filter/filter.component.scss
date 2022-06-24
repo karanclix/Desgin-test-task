@@ -1,0 +1,124 @@
+.app-filter{
+  padding: 5px;
+  &-container{
+    padding: 15px 0 15px 0;
+  }
+
+  &-wrapper{
+    border: 1px solid #D1D5DB;
+    border-radius: 50px;
+
+    .app-filter-content{
+      position: relative;
+      padding: 10px 25px 10px 25px;
+      display: flex;
+      align-items: center;
+
+      &-value{
+        padding-left: 10px;
+        border-right: 1px solid #D1D5DB;
+
+        .filter-value{
+          display: flex;
+          align-items: center;
+          font-size: 16px;
+          font-weight: 600;
+          mat-icon{
+            color: #FF4B22;
+            font-size: 1.2rem;
+          }
+        }
+        .filter-subvalue{
+          font-size: 12px;
+          color: #9b9d9e;
+          font-weight: 600;
+        }
+        p{
+          margin: 0;
+          font-size: 14px;
+        }
+        width: 30vw;
+      }
+
+      &-search{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        right: 10px;
+        button{
+          padding: 0.7rem;
+          border-radius: 50px;
+          background-color: rgb(242, 88, 49);
+          border: none;
+
+          mat-icon{
+            font-size: 2rem;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+
+} /* for desktops */
+
+@media (max-width: 1024) {
+
+} /* for laptops */
+
+// @media (min-width: 768px) and (max-width: 990px) {
+// }
+/* for large tablets */
+
+@media (max-width: 768px) {
+  .app-filter{
+    &-container{
+      padding: 2px 0;
+    }
+    &-wrapper{
+      .app-filter-content{
+        &-value{
+          padding-left: 5px;
+          border-right: 1px solid #D1D5DB;
+
+          .filter-value{
+            font-size: 12px;
+            mat-icon{
+              font-size: 1.2rem;
+            }
+          }
+          .filter-subvalue{
+            font-size: 5px;
+          }
+          p{
+            font-size: 12px;
+          }
+        }
+
+        &-search{
+          button{
+            padding: 0.2rem;
+
+            mat-icon{
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+/* for smaller tablets */
+
+@media (max-width: 500px) {
+
+} /* for cellphones */

@@ -1,0 +1,319 @@
+.app-itenary-main{
+  padding-top: 0.3rem;
+  padding-bottom: 0.7rem;
+
+  &-container{
+    padding: 0.3rem;
+
+    &-wrapper{
+
+      .app-itenary-filter{
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        border-radius: 15px;
+        padding: 0.5rem;
+        background-color: #125FA8;
+        color: #ffff;
+        &-dropdown{
+          width: 25%;
+          padding: 0.1rem 0.7rem 0.1rem 0.7rem;
+          font-weight: 600;
+          border-right: 1px solid #D1D5DB;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 0.7rem;
+          word-break: break-all;
+        }
+      }
+
+      .app-itenary-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 0 5px 0;
+
+        .see-more{
+          color: #E63F19;
+          font-weight: 600;
+        }
+      }
+
+      .app-itenary-upload{
+        display: flex;
+        justify-content: space-between;
+
+        &-add{
+          border: 3px dotted #FF6842;
+          height: 120px;
+          width: 20%;
+          border-radius: 20px;
+          background-color: #FBE8E7;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          mat-icon{
+            font-size: 2rem;
+            color: #FF6842;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
+        &-files{
+          background-color: #F3F4F6;
+          border-radius: 20px;
+          border: 3px dotted gray;
+          height: 120px;
+          width: 77%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          mat-icon{
+           margin: 0.3rem;
+          }
+        }
+      }
+
+      .app-itinerary-carousel{
+        overflow: scroll;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        &-images{
+          display: flex;
+          justify-content: space-between;
+          .itinerary-image{
+            margin-right: 1.2rem;
+            position: relative;
+            img{
+              border-radius: 20px;
+              max-width: 160px;
+              height: 200px;
+              object-fit: fill;
+            }
+
+            &-content{
+              position: absolute;
+              bottom: 10%;
+              left: 3%;
+              color: white;
+              font-weight: 600;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              span{
+                font-size: 0.8rem;
+              }
+            }
+
+            &-icon{
+              position: absolute;
+              top: 8%;
+              right: 8%;
+              color: white;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+
+      .app-itinerary-carousel::-webkit-scrollbar {
+        display: none;
+      }
+
+      .app-itenary-header-secondary{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.2rem 0 1.2rem 0;
+
+        .see-more{
+          color: #E63F19;
+          font-weight: 600;
+        }
+      }
+
+      .app-itinerary-activity-carousel{
+        overflow: scroll;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+
+        &-images{
+
+          display: flex;
+          justify-content: space-between;
+          .activity-image{
+            margin-right: 1.2rem;
+            position: relative;
+            img{
+              border-radius: 20px;
+              max-width: 120px;
+              height: 120px;
+              object-fit: fill;
+            }
+
+            &-content{
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              color: white;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+
+      .app-itinerary-activity-carousel::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+
+} /* for desktops */
+
+@media (max-width: 991px) {
+
+} /* for laptops */
+
+@media (min-width: 768px) and (max-width: 990px) {
+  .app-itenary-main{
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    &-container{
+      padding: 0.3rem;
+
+      &-wrapper{
+
+        .app-itenary-filter{
+          &-dropdown{
+            padding: 0.1rem 0.6rem 0.1rem 0.6rem;
+          }
+          span{
+            font-size: 0.6rem;
+            font-weight: 600;
+          }
+        }
+
+        .app-itenary-header{
+          padding: 3px 0 3px 0;
+        }
+        .app-itenary-upload{
+          &-add{
+            height: 100px;
+            padding: 2px;
+          }
+
+          &-files{
+            height: 100px;
+            width: 73%;
+            padding: 2px;
+          }
+        }
+
+        .app-itinerary-carousel{
+          &-images{
+            .itinerary-image{
+              margin-right: 1rem;
+              img{
+                max-width: 140px;
+                height: 170px;
+              }
+            }
+          }
+        }
+
+        .app-itinerary-activity-carousel{
+          &-images{
+            .activity-image{
+              margin-right: 1rem;
+              img{
+                max-width: 100px;
+                height: 100px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+} /* for large tablets */
+
+// @media (max-width: 768px) {
+
+// }
+/* for smaller tablets */
+
+@media (max-width: 768px) {
+  .app-itenary-main{
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    &-container{
+      padding: 0.3rem;
+
+      &-wrapper{
+        .app-itenary-filter{
+          &-dropdown{
+            padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+            font-size: 0.5rem;
+
+            span{
+              font-size: 0.6rem;
+              font-weight: 600;
+            }
+          }
+        }
+
+        .app-itenary-header{
+          padding: 3px 0;
+        }
+        .app-itenary-upload{
+          &-add{
+            height: 5rem;
+            padding: 2px;
+          }
+
+          &-files{
+            height: 5rem;
+            width: 73%;
+            padding: 2px;
+          }
+        }
+
+        .app-itinerary-carousel{
+          &-images{
+            .itinerary-image{
+              margin-right: 0.5rem;
+              img{
+                width: 7rem;
+                height: 9rem;
+              }
+            }
+          }
+        }
+
+        .app-itinerary-activity-carousel{
+          &-images{
+            .activity-image{
+              margin-right: 0.5rem;
+              img{
+                width: 6rem;
+                height: 6rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+} /* for cellphones */
